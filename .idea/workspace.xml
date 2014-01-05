@@ -15,7 +15,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PythonSnake$PySnake.coverage" NAME="PySnake Coverage Results" MODIFIED="1388900158218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonSnake$PySnake.coverage" NAME="PySnake Coverage Results" MODIFIED="1388903271614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -32,7 +32,7 @@
       <file leaf-file-name="PySnake.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PySnake.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="25" selection-start="3651" selection-end="3651" vertical-scroll-proportion="0.9466248" vertical-offset="1301" max-vertical-offset="2006">
+            <state line="124" column="38" selection-start="4014" selection-end="4014" vertical-scroll-proportion="0.8398744" vertical-offset="1573" max-vertical-offset="2227">
               <folding>
                 <element signature="e#115#147#0" expanded="true" />
               </folding>
@@ -468,7 +468,11 @@
       <created>1388902621330</created>
       <updated>1388902621330</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Drawing the snake and the fruit.">
+      <created>1388902939983</created>
+      <updated>1388902939983</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -508,7 +512,8 @@
     <MESSAGE value="Set Key Bindings" />
     <MESSAGE value="Fix an error..." />
     <MESSAGE value="Add key binding for direction, action when the snake increase, spawn fruit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add key binding for direction, action when the snake increase, spawn fruit." />
+    <MESSAGE value="Drawing the snake and the fruit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Drawing the snake and the fruit." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -516,7 +521,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/PySnake.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="25" selection-start="3651" selection-end="3651" vertical-scroll-proportion="0.9466248" vertical-offset="1301" max-vertical-offset="2006">
+        <state line="124" column="38" selection-start="4014" selection-end="4014" vertical-scroll-proportion="0.8398744" vertical-offset="1573" max-vertical-offset="2227">
           <folding>
             <element signature="e#115#147#0" expanded="true" />
           </folding>

@@ -111,3 +111,16 @@ while True:
         pygame.draw.rect(playSurface, whiteColour, Rect(position[0], position[1], 20, 20))
         pygame.draw.rect(playSurface, redColour, Rect(fruitPosition[0], fruitPosition[1], 20, 20))
     pygame.display.flip()
+
+    # When the player die :
+    if snakePosition[0] > 620 or snakePosition[0] < 0:
+        gameOver()
+    if snakePosition[1] > 460 or snakePosition[1] < 0:
+        gameOver()
+
+    for snakeBody in snakeSegments[1:]:
+        if snakePosition[0] == snakeBody[0] and snakePosition[1] == snakeBody[1]:
+            gameOver()
+
+    # Set control speed for the game :
+    fpsClock.tick(20)
