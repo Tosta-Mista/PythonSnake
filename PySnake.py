@@ -30,6 +30,7 @@ direction = 'right'
 changeDirection = direction
 playerScore = 0
 
+
 def gameOver():
     """
     Name : gameOver()
@@ -39,7 +40,7 @@ def gameOver():
     gameOverSurf = gameOverFont.render('Game Over', True, greyColour)
     gameOverRect = gameOverSurf.get_rect()
     gameOverRect.midtop = (320, 10)
-    gameOverScore = gameOverFont.render('Score :'+str(playerScore), True, redColour)
+    gameOverScore = gameOverFont.render('Score :' + str(playerScore), True, redColour)
     scoreRect = gameOverScore.get_rect()
     scoreRect.midtop = (320, 100)
     playSurface.blit(gameOverScore, scoreRect)
@@ -107,7 +108,7 @@ while True:
     if fruitSpawned == 0:
         x = random.randrange(1, 32)
         y = random.randrange(1, 24)
-        fruitPosition = [int(x*20), int(y*20)]
+        fruitPosition = [int(x * 20), int(y * 20)]
     fruitSpawned = 1
 
     # Draw something at the screen:

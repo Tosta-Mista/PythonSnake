@@ -32,7 +32,7 @@
       <file leaf-file-name="PySnake.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PySnake.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="24" selection-start="2917" selection-end="2923" vertical-scroll-proportion="0.27943486" vertical-offset="1403" max-vertical-offset="2312">
+            <state line="131" column="1" selection-start="4273" selection-end="4273" vertical-scroll-proportion="0.8398744" vertical-offset="1692" max-vertical-offset="2329">
               <folding>
                 <element signature="e#115#147#0" expanded="true" />
               </folding>
@@ -476,7 +476,11 @@
       <created>1388903344769</created>
       <updated>1388903344769</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Score added and when the player loose the score is displayed.">
+      <created>1388904955378</created>
+      <updated>1388904955378</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -518,7 +522,8 @@
     <MESSAGE value="Add key binding for direction, action when the snake increase, spawn fruit." />
     <MESSAGE value="Drawing the snake and the fruit." />
     <MESSAGE value="Set if statement when the player die and set the game speed using fpsClock.tick(20)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set if statement when the player die and set the game speed using fpsClock.tick(20)" />
+    <MESSAGE value="Score added and when the player loose the score is displayed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Score added and when the player loose the score is displayed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -526,7 +531,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/PySnake.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="24" selection-start="2917" selection-end="2923" vertical-scroll-proportion="0.27943486" vertical-offset="1403" max-vertical-offset="2312">
+        <state line="131" column="1" selection-start="4273" selection-end="4273" vertical-scroll-proportion="0.8398744" vertical-offset="1692" max-vertical-offset="2329">
           <folding>
             <element signature="e#115#147#0" expanded="true" />
           </folding>
