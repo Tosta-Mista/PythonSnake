@@ -28,3 +28,15 @@ fruitPosition = [300, 300]
 fruitSpawned = 1
 direction = 'right'
 changeDirection = direction
+
+
+def gameOver():
+    gameOverFont = pygame.font.Font('freesansbold.ttf', 72)
+    gameOverSurf = gameOverFont.render('Game Over', True, greyColour)
+    gameOverRect = gameOverSurf.get_rect()
+    gameOverRect.midtop = (320, 10)
+    playSurface.blit(gameOverSurf, gameOverRect)
+    pygame.display.flip()
+    time.sleep(5)
+    pygame.quit()
+    sys.exit()
