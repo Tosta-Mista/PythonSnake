@@ -104,3 +104,10 @@ while True:
         y = random.randrange(1,24)
         fruitPosition = [int(x*20), int(y*20)]
     fruitSpawned = 1
+
+    # Draw something at the screen:
+    playSurface.fill(blackColour)
+    for position in snakeSegments:
+        pygame.draw.rect(playSurface, whiteColour, Rect(position[0], position[1], 20, 20))
+        pygame.draw.rect(playSurface, redColour, Rect(fruitPosition[0], fruitPosition[1], 20, 20))
+    pygame.display.flip()

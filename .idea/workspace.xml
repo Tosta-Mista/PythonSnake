@@ -32,7 +32,7 @@
       <file leaf-file-name="PySnake.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PySnake.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="25" selection-start="3165" selection-end="3165" vertical-scroll-proportion="0.8398744" vertical-offset="1165" max-vertical-offset="1887">
+            <state line="112" column="25" selection-start="3651" selection-end="3651" vertical-scroll-proportion="0.9466248" vertical-offset="1301" max-vertical-offset="2006">
               <folding>
                 <element signature="e#115#147#0" expanded="true" />
               </folding>
@@ -464,7 +464,11 @@
       <created>1388900153473</created>
       <updated>1388900153473</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add key binding for direction, action when the snake increase, spawn fruit.">
+      <created>1388902621330</created>
+      <updated>1388902621330</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -503,7 +507,8 @@
     <MESSAGE value="Create gameOver function." />
     <MESSAGE value="Set Key Bindings" />
     <MESSAGE value="Fix an error..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix an error..." />
+    <MESSAGE value="Add key binding for direction, action when the snake increase, spawn fruit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add key binding for direction, action when the snake increase, spawn fruit." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -511,7 +516,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/PySnake.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="25" selection-start="3165" selection-end="3165" vertical-scroll-proportion="0.8398744" vertical-offset="1165" max-vertical-offset="1887">
+        <state line="112" column="25" selection-start="3651" selection-end="3651" vertical-scroll-proportion="0.9466248" vertical-offset="1301" max-vertical-offset="2006">
           <folding>
             <element signature="e#115#147#0" expanded="true" />
           </folding>
