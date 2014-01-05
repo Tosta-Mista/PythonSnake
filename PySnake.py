@@ -23,7 +23,7 @@ whiteColour = pygame.Color(255, 255, 255)
 greyColour = pygame.Color(150, 150, 150)
 
 snakePosition = [100, 100]
-snakeSegments = [[100,100], [80, 100], [60,100]]
+snakeSegments = [[100, 100], [80, 100], [60, 100]]
 fruitPosition = [300, 300]
 fruitSpawned = 1
 direction = 'right'
@@ -31,6 +31,10 @@ changeDirection = direction
 
 
 def gameOver():
+    """
+    Name : gameOver()
+    Desc : GameOver() write the words "Game Over" during 5 seconds and quit the game.
+    """
     gameOverFont = pygame.font.Font('freesansbold.ttf', 72)
     gameOverSurf = gameOverFont.render('Game Over', True, greyColour)
     gameOverRect = gameOverSurf.get_rect()
@@ -40,3 +44,21 @@ def gameOver():
     time.sleep(5)
     pygame.quit()
     sys.exit()
+
+# Main loop :
+while True:
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
+        elif event.type == KEYDOWN:
+            if event.key == K_RIGHT or event.key == ord('d'):
+                changeDirection = 'right'
+            if event.key == K_LEFT or event.key == ord('a'):
+                changeDirection = 'left'
+            if event.key == K_UP or event.key == ord('w'):
+                changeDirection = 'up'
+            if event.key == K_DOWN or evenkt.key == ord('s'):
+                changeDirection = 'down'
+            if event.key == K_ESCAPE:
+                pygame.event.post(pygame.event.Event(QUIT))
