@@ -53,6 +53,7 @@ while True:
             pygame.quit()
             sys.exit()
         elif event.type == KEYDOWN:
+            # Key Bindings :
             if event.key == K_RIGHT or event.key == ord('d'):
                 changeDirection = 'right'
             if event.key == K_LEFT or event.key == ord('a'):
@@ -63,3 +64,43 @@ while True:
                 changeDirection = 'down'
             if event.key == K_ESCAPE:
                 pygame.event.post(pygame.event.Event(QUIT))
+
+    # Key Binding comparaison :
+    if changeDirection == 'right' and not direction == 'left':
+        direction = changeDirection
+    if changeDirection == 'left' and not direction == 'right':
+        direction = changeDirection
+    if changeDirection == 'up' and not direction == 'down':
+        direction = changeDirection
+    if changeDirection == 'down' and not direction == 'up':
+        direction = changeDirection
+
+    # Movement settings :
+    if direction == 'right':
+        snakePosition[0] += 20
+    if direction == 'left':
+        snakePosition[0] -= 20
+    if direction == 'up':
+        snakePosition[1] -= 20
+    if direction == 'down':
+        snakePosition[1] += 20
+
+    # Initiate Snake Segments, each time python reach this line
+    # it will increase the length of the snake's body :
+    snakeSegments.insert(0, list(snakePosition))
+
+    # The first instruction check if the X and Y coordinates of
+    # the snake's head to see if it matches the X and Y coordinates
+    # of the fruit the target player is chasing. If the values match
+    # the fruit is cosidered to have been eaten by the snake.
+    if snakePosition[0] == fruitPosition[0] and snakePosition[1] == fruitPosition[1]:
+        fruitSpawned = 0
+    else:
+        snakeSegments.pop()
+
+    # Create fruit Spawn:
+    if fruitSpawned == 0:
+        x = random.randrange(1,32)
+        y = random.randrange(1,24)
+        fruitPosition = [int(x*20), int(y*20)]
+    fruitSpawned = 1
