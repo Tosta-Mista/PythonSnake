@@ -28,7 +28,7 @@ fruitPosition = [300, 300]
 fruitSpawned = 1
 direction = 'right'
 changeDirection = direction
-
+playerScore = 0
 
 def gameOver():
     """
@@ -39,6 +39,10 @@ def gameOver():
     gameOverSurf = gameOverFont.render('Game Over', True, greyColour)
     gameOverRect = gameOverSurf.get_rect()
     gameOverRect.midtop = (320, 10)
+    gameOverScore = gameOverFont.render('Score :'+str(playerScore), True, redColour)
+    scoreRect = gameOverScore.get_rect()
+    scoreRect.midtop = (320, 100)
+    playSurface.blit(gameOverScore, scoreRect)
     playSurface.blit(gameOverSurf, gameOverRect)
     pygame.display.flip()
     time.sleep(5)
@@ -95,13 +99,14 @@ while True:
     # the fruit is cosidered to have been eaten by the snake.
     if snakePosition[0] == fruitPosition[0] and snakePosition[1] == fruitPosition[1]:
         fruitSpawned = 0
+        playerScore += 10
     else:
         snakeSegments.pop()
 
     # Create fruit Spawn:
     if fruitSpawned == 0:
-        x = random.randrange(1,32)
-        y = random.randrange(1,24)
+        x = random.randrange(1, 32)
+        y = random.randrange(1, 24)
         fruitPosition = [int(x*20), int(y*20)]
     fruitSpawned = 1
 
@@ -123,4 +128,4 @@ while True:
             gameOver()
 
     # Set control speed for the game :
-    fpsClock.tick(20)
+    fpsClock.tick(10)
