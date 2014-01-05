@@ -45,6 +45,7 @@ def gameOver():
     pygame.quit()
     sys.exit()
 
+
 # Main loop :
 while True:
     for event in pygame.event.get():
@@ -58,7 +59,7 @@ while True:
                 changeDirection = 'left'
             if event.key == K_UP or event.key == ord('w'):
                 changeDirection = 'up'
-            if event.key == K_DOWN or evenkt.key == ord('s'):
+            if event.key == K_DOWN or event.key == ord('s'):
                 changeDirection = 'down'
             if event.key == K_ESCAPE:
                 pygame.event.post(pygame.event.Event(QUIT))
